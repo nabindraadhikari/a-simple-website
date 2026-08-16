@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Bowling Action Analysis</title>
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --accent-color: #38bdf8;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --border-color: #334155;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      margin: 0;
+      padding: 2rem 1rem;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: var(--accent-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+    }
+
+    section {
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+      border: 1px solid var(--border-color);
+    }
+
+    h2 {
+      color: var(--accent-color);
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.5rem;
+      margin-top: 0;
+    }
+
+    /* Comparison / Reference Images Section */
+    .reference-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .card {
+      background-color: var(--bg-color);
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-caption {
+      padding: 1rem;
+    }
+
+    .card-caption h3 {
+      margin: 0 0 0.5rem 0;
+      color: var(--text-main);
+    }
+
+    .card-caption p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* Top to Bottom Analysis Timeline */
+    .analysis-timeline {
+      position: relative;
+      padding-left: 1.5rem;
+      border-left: 3px solid var(--accent-color);
+      margin-top: 1.5rem;
+    }
+
+    .analysis-step {
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    .analysis-step:last-child {
+      margin-bottom: 0;
+    }
+
+    .analysis-step::before {
+      content: '';
+      position: absolute;
+      left: -2.1rem;
+      top: 0.3rem;
+      width: 12px;
+      height: 12px;
+      background-color: var(--accent-color);
+      border-radius: 50%;
+    }
+
+    .analysis-step h3 {
+      margin: 0 0 0.5rem 0;
+      color: var(--text-main);
+    }
+
+    .analysis-step p {
+      margin: 0;
+      color: var(--text-muted);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <header>
+      <h1>My Bowling Action Breakdown</h1>
+      <p class="subtitle">Bio-mechanical Top-to-Bottom Analysis & Fast Bowling Reference Models</p>
+    </header>
+
+    <!-- History Section -->
+    <section id="history">
+      <h2>My Action History & Transformation</h2>
+      <p>
+        Originally, my bowling style was built around an aggressive, high-impact side-on action modeled after <strong>Brett Lee</strong>—relying on a strong chest drive, deep hip-shoulder separation, and a long bound. However, after suffering a devastating injury, I was forced to completely overhaul my technique for physical longevity. I transitioned into a highly efficient, front-on fast bowling action modeled after <strong>Jofra Archer</strong>. This shift reduced spinal twisting while enabling me to generate rapid pace through effortless rhythm, smooth hip drive, high release, and a straight follow-through.
+      </p>
+    </section>
+
+    <!-- Reference Models (Brett Lee & Jofra Archer) -->
+    <section id="reference-models">
+      <h2>Pace Bowling Reference Models</h2>
+      <div class="reference-gallery">
+        
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Brett_Lee_2008.jpg/800px-Brett_Lee_2008.jpg" alt="Brett Lee Bowling Action">
+          <div class="card-caption">
+            <h3>Brett Lee (Previous Blueprint)</h3>
+            <p><strong>Classical Side-On Power:</strong> Heavy chest drive, wide stance, and back-foot load that required massive torque on the spine.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Jofra_Archer_2019.jpg/800px-Jofra_Archer_2019.jpg" alt="Jofra Archer Bowling Action">
+          <div class="card-caption">
+            <h3>Jofra Archer (Current Action Model)</h3>
+            <p><strong>Front-On Efficiency:</strong> Smooth upright gather, high wrist position at release, rapid hip rotation, and a straight, momentum-preserving follow-through.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Top to Bottom Analysis Section -->
+    <section id="analysis">
+      <h2>Top-to-Bottom Action Breakdown</h2>
+      
+      <div class="analysis-timeline">
+        
+        <div class="analysis-step">
+          <h3>1. Head & Eyes Alignment</h3>
+          <p>Head is kept still and facing directly towards the target through gather and release. The front-on perspective gives a clear, unobstructed view over the front arm to the batsman.</p>
+        </div>
+
+        <div class="analysis-step">
+          <h3>2. High Wrist & High Release Point</h3>
+          <p>At the point of release, the bowling arm reaches near-maximum vertical extension. The wrist remains high and rigid behind the seam, maximizing bounce and seam position just like Jofra Archer.</p>
+        </div>
+
+        <div class="analysis-step">
+          <h3>3. Core & Front-On Hip Rotation</h3>
+          <p>Instead of twisting heavily at the waist, the hips drive directly through the crease in alignment with the target. Active hip rotation propels the upper body forward without putting twisting stress on the back.</p>
+        </div>
+
+        <div class="analysis-step">
+          <h3>4. Braced Base & Straight Fall-Through</h3>
+          <p>The front leg plants firmly to absorb ground impact. Upon ball release, momentum stays aligned down the center of the pitch, allowing a perfectly straight, natural follow-through without veering off-line.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <p>Custom Bowling Action Breakdown</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
